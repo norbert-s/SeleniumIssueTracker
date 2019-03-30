@@ -14,18 +14,11 @@ import java.io.IOException;
 
 
 public class SubmitIssueTest   {
-    String value,jsonText;
-    boolean errOk=false;
-    boolean success=false;
-
     public SubmitIssue s;
-
     private WebDriverWait wait;
-
-
     getData file;
     Base base;
-    WebDriver d;
+//    WebDriver d;
 
     SubmitIssueTest() throws IOException {
 
@@ -37,113 +30,30 @@ public class SubmitIssueTest   {
     }
     @BeforeMethod
     public void setupMethod() throws IOException {
-
         base.ChromeInit();
-        this.d = base.d;
-        s = new SubmitIssue(d);
+        s = new SubmitIssue(base.d);
         file = new getData();
-
-    }
-
-//    @Test
-//    public void probe(){
-//
-//        titleSend(getValidTitle());
-//        titleSend(getValidTitle());
-//
-//    }
-    public void textValidator(){
-        String jsonText = s.jsonResult.getText();
-        //System.out.println(jsonText);
-        boolean containsSuccess=false;
-        if(jsonText.contains(s.getSuccess())){
-            containsSuccess=true;
-        }
     }
 
     @Test
-    public void proba() throws InterruptedException {
-        s.c1();
-        String jsonText = s.jsonResult.getText();
-        //System.out.println(jsonText);
-        boolean containsSuccess=false;
-        if(jsonText.contains(s.getSuccess())){
-            containsSuccess=true;
-        }
-        Assert.assertTrue(containsSuccess);
-    }
-    @Test
-    public void proba2() throws InterruptedException {
-        s.c1();
-        String jsonText = s.jsonResult.getText();
-        //System.out.println(jsonText);
-        boolean containsSuccess=false;
-        if(jsonText.contains(s.getSuccess())){
-            containsSuccess=true;
-        }
-        Assert.assertTrue(containsSuccess);
+    public void validValuesForTheAPI_C1() throws InterruptedException {
+        Assert.assertTrue(s.validValuesForTheAPI_C1());
     }
 
-//    @Test
-//    public void validValuesForTheAPI_C1() throws InterruptedException {
-//
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getText().sendKeys(getValidText());
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getSubmit().click();
-//
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-//        //System.out.println(jsonText);
-//        boolean containsSuccess=false;
-//        if(jsonText.contains(getSuccess())){
-//            containsSuccess=true;
-//        }
-//
-//        Assert.assertTrue(containsSuccess);
-//    }
-////
-//    @Test
-//    public void nonValidTitle_C2() throws InterruptedException {
-//        s.getTitle().sendKeys(getInvalidShortTitle());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-//        //System.out.println(jsonText);
-//        boolean errOk=false;
-//        if(jsonText.contains(getErrTitleShort())){
-//            errOk=true;
-//        }
-//        Assert.assertTrue(errOk);
-//    }
-//
-//    @Test
-//    public void nothingIsEnteredToBested_C3() throws InterruptedException {
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-//        //System.out.println(jsonText);
-//        boolean errOk=false;
-//        if(jsonText.contains(getErrTitleShort())){
-//            errOk=true;
-//        }
-//        Assert.assertTrue(errOk);
-//    }
-//
-//    @Test
-//    public void mandatoryFieldsAreEnteredExceptTitle_C4() throws InterruptedException {
-//        s.getText().sendKeys(getValidText());
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-//        //System.out.println(jsonText);
-//        boolean errOk=false;
-//        if(jsonText.contains(getErrTitleShort())){
-//            errOk=true;
-//        }
-//        Assert.assertTrue(errOk);
-//    }
+    @Test
+    public void nonValidTitle_C2()  {
+        Assert.assertTrue(s.nonValidTitle_C2());
+    }
+
+    @Test
+    public void nothingIsEnteredToBested_C3() throws InterruptedException {
+        Assert.assertTrue(s.nothingIsEntered_C3());
+    }
+
+    @Test
+    public void mandatoryFieldsAreEnteredExceptTitle_C4() throws InterruptedException {
+        Assert.assertTrue(s.mandatoryFieldsAreEnteredExceptTitle_C4());
+    }
 //    @Test
 //    public void titleIsProvidedButNoTextField_C5() throws InterruptedException {
 //        s.getTitle().sendKeys(getValidTitle());
@@ -369,12 +279,12 @@ public class SubmitIssueTest   {
     @AfterMethod
 
     public void tearDown(){
-        d.quit();
+        base.d.quit();
 
     }
-//    @AfterTest
-//    public void tearDown(){
-//        d.close();
-//        d.quit();
-//    }
+    @AfterTest
+    public void tearDownAll(){
+        base=null;
+
+    }
 }

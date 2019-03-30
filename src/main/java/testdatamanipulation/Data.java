@@ -80,7 +80,7 @@ public class Data {
         return it("errIdShort");
     }
 
-    public String getErrTitleShort(){
+    public String getErrTitle(){
         return it("errTitleShort");
     }
 

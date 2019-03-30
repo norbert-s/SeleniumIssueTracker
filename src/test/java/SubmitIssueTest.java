@@ -68,184 +68,61 @@ public class SubmitIssueTest   {
 
         Assert.assertTrue(s.firstTwoButNotThird_C7());
     }
-//    @Test
-//    public void firstIsTwoChars_C9() throws InterruptedException {
-//        s.getTitle().sendKeys(getInvalidShortTitle());
-//        s.getText().sendKeys(getValidText());
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-//        //System.out.println(jsonText);
-//        boolean errOk=false;
-//        if(jsonText.contains(getErrTitleShort())){
-//            errOk=true;
-//        }
-//        Assert.assertTrue(errOk);
-//    }
-//    @Test
-//    public void secondIsTwoChars_C10() throws InterruptedException {
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getText().sendKeys(getInvalidShortText());
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-//       // //System.out.println(jsonText);
-//        boolean errOk=false;
-//        if(jsonText.contains(getErrTextShort())){
-//            errOk=true;
-//        }
-//        Assert.assertTrue(errOk);
-//    }
+    @Test
+    public void firstIsTwoChars_C9() throws InterruptedException {
+
+        Assert.assertTrue(s.firstIsTwoChars_C9());
+    }
+    @Test
+    public void secondIsTwoChars_C10() throws InterruptedException {
+
+        Assert.assertTrue(s.secondIsTwoChars_C10());
+    }
 //
-//    @Test
-//    public void thirdIsTwoChars_C11() throws InterruptedException {
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getText().sendKeys(getValidText());
-//        s.getCreatedBy().sendKeys(getInvalidShortCreatedBy());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-//        //System.out.println(jsonText);
-//        boolean errOk=false;
-//        if(jsonText.contains(getErrCreatedByShort())){
-//            errOk=true;
-//        }
-//        Assert.assertTrue(errOk);
+    @Test
+    public void thirdIsTwoChars_C11() throws InterruptedException {
+
+        Assert.assertTrue(s.thirdIsTwoChars_C11());
 //    }
 //    @Test
 //    public void FourEntered_C12() throws InterruptedException {
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getText().sendKeys(getValidText());
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getAssignedTo().sendKeys(getAssignedTo());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-////        //System.out.println(jsonText);
-//        if(jsonText.contains(getSuccess())){
-//            success=true;
-//        }
-//        Assert.assertTrue(success);
+//
+//        Assert.assertTrue(s.FourEntered_C12());
 //    }
 //    @Test
 //    public void allFiveEntered_C14() throws InterruptedException, IOException {
 //
-//
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getText().sendKeys(getValidText());
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getAssignedTo().sendKeys(getAssignedTo());
-//        s.getStatus().sendKeys(getStatus());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-////        //System.out.println(jsonText);
-//        if(jsonText.contains(getSuccess())){
-//            success=true;
-//        }
-//        Assert.assertTrue(success);
+//        Assert.assertTrue(s.allFiveEntered_C14());
 //
 //    }
 //    @Test
 //    public void title256Chars_C15() throws InterruptedException, IOException {
-//        String chars256 = file.createData(256,prop);
-//        s.getTitle().sendKeys(chars256);
-//        s.getText().sendKeys(getValidText());
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getAssignedTo().sendKeys(getAssignedTo());
-//        s.getStatus().sendKeys(getStatus());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-////        //System.out.println(jsonText);
-//        if(jsonText.contains(getErrTitleShort())){
-//            success=true;
-//        }
+//
 //        Assert.assertTrue(success);
 //    }
 //    @Test
 //    public void text3001Chars_C16() throws InterruptedException, IOException {
-//        String data = file.createData(3001,prop);
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getText().sendKeys(data);
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-////        //System.out.println(jsonText);
-//        if(jsonText.contains(getErrTextShort())){
-//            success=true;
-//        }
+
 //        Assert.assertTrue(success);
 //    }
 //    @Test
 //    public void text3000Chars_C17() throws InterruptedException, IOException {
-//        String data = file.createData(3000,prop);
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getText().sendKeys(data);
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-////        //System.out.println(jsonText);
-//        if(jsonText.contains(getSuccess())){
-//            success=true;
-//        }
+
 //        Assert.assertTrue(success);
 //    }
 //    @Test
 //    public void title255Chars_C18() throws InterruptedException, IOException {
-//        String chars256 = file.createData(255,prop);
-//        s.getTitle().sendKeys(chars256);
-//        s.getText().sendKeys(getValidText());
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getAssignedTo().sendKeys(getAssignedTo());
-//        s.getStatus().sendKeys(getStatus());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-////        wait = callWait(s.getJson());
-//        String jsonText = s.getJson().getText();
-////        //System.out.println(jsonText);
-//        if(jsonText.contains(getSuccess())){
-//            success=true;
-//        }
+
 //        Assert.assertTrue(success);
 //    }
 //    @Test
 //    public void createdBy256Chars_C20() throws InterruptedException, IOException {
-//        String data = file.createData(256,prop);
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getText().sendKeys(getValidText());
-//        s.getCreatedBy().sendKeys(data);
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-////        wait = callWait(s.getJson());
-//        String jsonText = s.getJson().getText();
-////        //System.out.println(jsonText);
-//        if(jsonText.contains(getErrCreatedByShort())){
-//            success=true;
-//        }
+
 //        Assert.assertTrue(success);
 //    }
 //    @Test
 //    public void createdBy255Chars_C21() throws InterruptedException, IOException {
-//
-//        file = new getData();
-//        String data = file.createData(255,prop);
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getText().sendKeys(getValidText());
-//        s.getCreatedBy().sendKeys(data);
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//
-////        wait = callWait(s.getJson());
-//        String jsonText = s.getJson().getText();
-////        //System.out.println(jsonText);
-//        if(jsonText.contains(getSuccess())){
-//            success=true;
-//        }
+
 //        Assert.assertTrue(success);
 //    }
 //

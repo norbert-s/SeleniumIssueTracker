@@ -60,36 +60,36 @@ public class Data {
         return it("assignedTo");
     }
 
-    public String getStatus(){
-        return it("status");
+    public String getStatusText(){
+        return it("statusText");
     }
 
     public String getInvalidTitle() {
-        return it("invalidShortTitle");
+        return it("invalidTitle");
     }
 
     public String getInvalidText() {
-        return it("invalidShortText");
+        return it("invalidText");
     }
 
     public String getInvalidCreatedBy() {
-        return it("invalidShortCreatedBy");
+        return it("invalidCreatedBy");
     }
 
     public String getUpdateErrId(){
-        return it("errIdShort");
+        return it("errId");
     }
 
     public String getErrTitle(){
-        return it("errTitleShort");
+        return it("errTitle");
     }
 
     public String getErrText(){
-        return it("errTextShort");
+        return it("errText");
     }
 
     public String getErrCreatedBy(){
-        return it("errCreatedByShort");
+        return it("errCreatedBy");
     }
 
     public String getErrDeleteId(){

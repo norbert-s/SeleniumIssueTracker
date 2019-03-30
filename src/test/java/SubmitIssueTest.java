@@ -54,9 +54,36 @@ public class SubmitIssueTest   {
 //        titleSend(getValidTitle());
 //
 //    }
+    public void textValidator(){
+        String jsonText = s.jsonResult.getText();
+        //System.out.println(jsonText);
+        boolean containsSuccess=false;
+        if(jsonText.contains(s.getSuccess())){
+            containsSuccess=true;
+        }
+    }
+
     @Test
     public void proba() throws InterruptedException {
-        s.validValuesForTheAPI_C1();
+        s.c1();
+        String jsonText = s.jsonResult.getText();
+        //System.out.println(jsonText);
+        boolean containsSuccess=false;
+        if(jsonText.contains(s.getSuccess())){
+            containsSuccess=true;
+        }
+        Assert.assertTrue(containsSuccess);
+    }
+    @Test
+    public void proba2() throws InterruptedException {
+        s.c1();
+        String jsonText = s.jsonResult.getText();
+        //System.out.println(jsonText);
+        boolean containsSuccess=false;
+        if(jsonText.contains(s.getSuccess())){
+            containsSuccess=true;
+        }
+        Assert.assertTrue(containsSuccess);
     }
 
 //    @Test

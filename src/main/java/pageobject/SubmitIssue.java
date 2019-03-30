@@ -46,27 +46,28 @@ public class SubmitIssue  extends Data {
     WebElement submit;
 
     @FindBy(id = "jsonResult")
-    WebElement json;
+    public WebElement jsonResult;
 
-    public void validValuesForTheAPI_C1() throws InterruptedException {
+    public void c1() throws InterruptedException {
+        System.out.println(getValidTitle());
         title.sendKeys(getValidTitle());
         text.sendKeys(getValidText());
         createdBy.sendKeys(getValidCreatedBy());
         submit.click();
-        getWaits.callWait(json,d);
-        String jsonText = json.getText();
-        //System.out.println(jsonText);
-        boolean containsSuccess=false;
-        if(jsonText.contains(getSuccess())){
-            containsSuccess=true;
-        }
-
-        Assert.assertTrue(containsSuccess);
+        getWaits.callWait(jsonResult,d);
+//        String jsonText = json.getText();
+//        //System.out.println(jsonText);
+//        boolean containsSuccess=false;
+//        if(jsonText.contains(getSuccess())){
+//            containsSuccess=true;
+//        }
+//
+//        Assert.assertTrue(containsSuccess);
     }
 //
-    public WebElement getTitle(){
-        return title;
-    }
+//    public WebElement getTitle(){
+//        return title;
+//    }
 //
 //    public WebElement getText(){
 //        return  text;

@@ -3,18 +3,15 @@ package testdatamanipulation;
 import utility.Prop;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Data {
     public  Map<String,String> map = new HashMap<>();
     public Data() throws IOException {
         getDataFromExcel();
     }
-    public void getDataFromExcel() throws IOException {
-        String excelPath = Prop.prop.getProperty("D:\\Idea_Selenium\\Selenium_now\\SeleniumIssueTrackerSecond\\src\\main\\java\\sourcefiles\\data.xlsx");
+    public void getDataFromExcel2() throws IOException {
+        String excelPath = "D:\\Idea_Selenium\\Selenium_now\\SeleniumIssueTrackerSecond\\src\\main\\java\\sourcefiles\\data.xlsx";
 
         BufferedReader br = new BufferedReader(new FileReader(excelPath));
         String[] stringArray ;
@@ -22,16 +19,31 @@ public class Data {
         while (br.ready()) {
             String check = br.readLine();
             stringArray = check.split(";");
-            map.put(stringArray[0],stringArray[1]);
-            System.out.println(stringArray[0]+stringArray[1]);
+            System.out.println(stringArray.length);
+//            map.put(stringArray[0],stringArray[1]);
+//            System.out.println(stringArray[0]+stringArray[1]);
         }
         br.close();
     }
+    public void getDataFromExcel() throws FileNotFoundException {
+        File f = new File("D:\\Idea_Selenium\\Selenium_now\\SeleniumIssueTrackerSecond\\src\\main\\java\\sourcefiles\\data.csv");
+        Scanner scanner = new Scanner (f,"ISO-8859-2");
+        String[] stringArray ;
 
-    public  String getIt(String v){
-       return  map.get(v);
+        while (scanner.hasNextLine()) {
+            String check = scanner.nextLine();
+            stringArray = check.split(";");
+            map.put(stringArray[0],stringArray[1]);
+            System.out.println(stringArray[0]+stringArray[1]);
+        }
+        scanner.close();
+
     }
 
+
+    public  String getIt(String v){
+        return  map.get(v);
+    }
     public  String validTitle() {
         return getIt("validTitle");
     }

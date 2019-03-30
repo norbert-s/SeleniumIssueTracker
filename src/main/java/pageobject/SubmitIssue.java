@@ -46,9 +46,9 @@ public class SubmitIssue  extends Data {
 
 
 
-    public void sendTitle(){
-        System.out.println(validTitle());
-        title.sendKeys(validTitle());
+    public void sendTitle(WebDriver d){
+        System.out.println("valid title submit issuebol"+validTitle());
+        getTitle().sendKeys(validTitle());
 
     }
 
@@ -70,9 +70,9 @@ public class SubmitIssue  extends Data {
 //        Assert.assertTrue(containsSuccess);
 //    }
 //
-//    public WebElement getTitle(){
-//        return json;
-//    }
+    public WebElement getTitle(){
+        return title;
+    }
 //
 //    public WebElement getText(){
 //        return  text;

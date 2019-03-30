@@ -15,9 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class Base {
     public WebDriver d;
 //    Properties prop = new Properties();
-
     String driverPath;
-
     String url;
     Prop p;
 

@@ -16,7 +16,7 @@ import utility.Prop;
 import java.io.IOException;
 
 
-public class SubmitIssueTest  extends Data {
+public class SubmitIssueTest   {
     String value,jsonText;
     boolean errOk=false;
     boolean success=false;

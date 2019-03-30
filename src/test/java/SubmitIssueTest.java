@@ -2,10 +2,7 @@ import base.Base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pageobject.SubmitIssue;
 import testdatamanipulation.Data;
 import testdatamanipulation.getData;
@@ -37,14 +34,15 @@ public class SubmitIssueTest   {
     @BeforeTest
     public void setup() throws IOException {
         base = new Base();
+    }
+    @BeforeMethod
+    public void setupMethod() throws IOException {
+
         base.ChromeInit();
         this.d = base.d;
         s = new SubmitIssue(d);
         file = new getData();
-    }
-    @BeforeMethod
-    public void setupMethod(){
-        d.navigate().refresh();
+
     }
 
 //    @Test
@@ -368,6 +366,12 @@ public class SubmitIssueTest   {
 //        Assert.assertTrue(success);
 //    }
 //
+    @AfterMethod
+
+    public void tearDown(){
+        d.quit();
+
+    }
 //    @AfterTest
 //    public void tearDown(){
 //        d.close();

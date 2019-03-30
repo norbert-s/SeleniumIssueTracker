@@ -3,82 +3,103 @@ package pageobject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import testdatamanipulation.Data;
 import utility.Prop;
 
 import java.io.IOException;
 
 
 
-public class SubmitIssue  {
-    public WebDriver d;
-    Prop propObj;
+public class SubmitIssue  extends Data {
+//    public WebDriver d;
+    Prop p;
 
-    public WebElement title,text,createdBy,assignedTo,status,submit,json;
-
-    public SubmitIssue(WebDriver d) throws IOException {
-        this.d = d;
-
-    }
-
-    public  By byTitle = By.cssSelector("form[method='post'] input[name='issue_title']");
-    By  byText = By.cssSelector("form[method='post'] textarea[name='issue_text']");
-    By  byCreatedBy = By.cssSelector("form[method='post'] input[name='created_by']");
-    By  byAssignedTo = By.cssSelector("form[method='post'] input[name='assigned_to']");
-    By  byStatusText = By.cssSelector("form[method='post'] input[name='status_text']");
-
-    By bySubmit = By.cssSelector("form[method='post'] button[type='submit']");
-
-    public By byJson = By.id("jsonResult");
-
-    public  WebElement find(By x){
-        return d.findElement(x);
+    public SubmitIssue() throws IOException {
     }
 
 
-    public  void setTitle(String func){
-        find(byTitle).sendKeys(func);
-    }
+//    public SubmitIssue(WebDriver d) throws IOException {
+//        this.d = d;
+//    }
 
-    public void textSend(String func){
-        find(byText).sendKeys(func);
-    }
+    @FindBy(css = "form[method='post'] input[name='issue_title']")
+    WebElement title;
 
-    public void createdBySend(String func){
-        find(byCreatedBy).sendKeys(func);
-    }
+    @FindBy(css = "form[method='post'] textarea[name='issue_text']")
+    WebElement text;
+
+    @FindBy(css = "form[method='post'] input[name='created_by']")
+    WebElement createdBy;
+
+    @FindBy(css = "form[method='post'] input[name='assigned_to']")
+    WebElement assignedTo;
+
+    @FindBy(css = "form[method='post'] input[name='status_text']")
+    WebElement statusText;
+
+    @FindBy(css = "form[method='post'] button[type='submit']")
+    WebElement submit;
+
+    @FindBy(id = "jsonResult")
+    WebElement json;
 
 
 
-    public WebElement getTitle(){
-        return d.findElement(byTitle);
-    }
-
-    public WebElement getText(){
-        return  d.findElement(byText);
-
-    }
-
-    public WebElement getCreatedBy(){
-        return d.findElement(byCreatedBy);
-
-    }
-
-    public WebElement getAssignedTo(){
-        return d.findElement(byAssignedTo);
-
-    }
-
-    public WebElement getStatus(){
-        return d.findElement(byStatusText);
+    public void sendTitle(){
+        System.out.println(validTitle());
+        title.sendKeys(validTitle());
 
     }
 
-    public WebElement getSubmit() {
-        return d.findElement(bySubmit);
-    }
-
-    public WebElement getJson(){
-       return d.findElement(byJson);
-
-    }
+//    public void validValuesForTheAPI_C1() throws InterruptedException {
+//
+//        title.sendKeys();
+//        s.getText().sendKeys(getValidText());
+//        s.getCreatedBy().sendKeys(getValidCreatedBy());
+//        s.getSubmit().click();
+//
+//        base.callWait(s.getJson(),d);
+//        String jsonText = s.getJson().getText();
+//        //System.out.println(jsonText);
+//        boolean containsSuccess=false;
+//        if(jsonText.contains(getSuccess())){
+//            containsSuccess=true;
+//        }
+//
+//        Assert.assertTrue(containsSuccess);
+//    }
+//
+//    public WebElement getTitle(){
+//        return json;
+//    }
+//
+//    public WebElement getText(){
+//        return  text;
+//
+//    }
+//
+//    public WebElement getCreatedBy(){
+//        return createdBy;
+//
+//    }
+//
+//    public WebElement getAssignedTo(){
+//        return assignedTo;
+//
+//    }
+//
+//    public WebElement getStatus(){
+//        return statusText;
+//
+//    }
+//
+//    public WebElement getSubmit() {
+//        return submit;
+//    }
+//
+//    public WebElement getJson(){
+//       return json;
+//
+//    }
 }

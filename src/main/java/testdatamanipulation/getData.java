@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Properties;
 import java.util.Random;
 
-public class CreateFile {
+public class getData {
     FileWriter file;
     Random number,character;
     char a,c;

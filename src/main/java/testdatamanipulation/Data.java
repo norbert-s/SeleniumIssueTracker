@@ -96,7 +96,7 @@ public class Data {
         return it("errDeleteId");
     }
 
-    public String getSuccess(){
+    public String getSuccessProp(){
         return it("success");
     }
 

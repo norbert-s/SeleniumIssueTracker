@@ -98,87 +98,97 @@ public class SubmitIssue  extends Data {
     public void sendStatusTest(){
         statusText.sendKeys(getStatusText());
     }
-
-    public Boolean validValuesForTheAPI_C1() throws InterruptedException {
+    public String validValuesForTheAPI_C1_ForAssert() throws InterruptedException {
         sendValidTitle();
         sendValidText();
         sendValidCreatedBy();
         submit.click();
         pause();
-        return success(getSuccess());
-    }
-    public Boolean nonValidTitle_C2(){
-        sendInvalidTitle();
-        submit();
-        pause();
-        return fail(getErrTitle());
+        String jsonText = jsonResult.getText();
+        return jsonText;
     }
 
-    public Boolean nothingIsEntered_C3() throws InterruptedException {
-        submit();
-        pause();
-        return fail(getErrTitle());
-    }
 
-    public Boolean mandatoryFieldsAreEnteredExceptTitle_C4() throws InterruptedException {
-        sendValidText();
-        sendValidCreatedBy();
-        submit();
-        pause();
-        return fail(getErrTitle());
-    }
-
-    public Boolean titleIsProvidedButNoTextField_C5() throws InterruptedException {
-        sendValidTitle();
-        submit();
-        pause();
-        return fail(getErrText());
-    }
-
-    public Boolean noTextisEntered_C6() throws InterruptedException {
-        sendValidTitle();
-        sendValidCreatedBy();
-        submit();
-        pause();
-        return fail(getErrText());
-    }
+//    public Boolean validValuesForTheAPI_C1() throws InterruptedException {
+//        sendValidTitle();
+//        sendValidText();
+//        sendValidCreatedBy();
+//        submit.click();
+//        pause();
+//        return success(getSuccess());
+//    }
+//    public Boolean nonValidTitle_C2(){
+//        sendInvalidTitle();
+//        submit();
+//        pause();
+//        return fail(getErrTitle());
+//    }
 //
-    public Boolean firstTwoButNotThird_C7() throws InterruptedException {
-        sendValidTitle();
-        sendValidText();
-        submit();
-        pause();
-        return  fail(getErrCreatedBy());
-    }
+//    public Boolean nothingIsEntered_C3() throws InterruptedException {
+//        submit();
+//        pause();
+//        return fail(getErrTitle());
+//    }
 //
-    public Boolean firstIsTwoChars_C9() throws InterruptedException {
-        sendInvalidTitle();
-        sendValidText();
-        sendValidCreatedBy();
-        submit();
-        pause();
-        return fail(getErrTitle());
-    }
-
-    public Boolean secondIsTwoChars_C10() throws InterruptedException {
-        sendValidTitle();
-        sendInvalidText();
-        sendValidCreatedBy();
-        submit();
-        pause();
-        System.out.println(fail(getErrText()));
-        return fail(getErrText());
-    }
+//    public Boolean mandatoryFieldsAreEnteredExceptTitle_C4() throws InterruptedException {
+//        sendValidText();
+//        sendValidCreatedBy();
+//        submit();
+//        pause();
+//        return fail(getErrTitle());
+//    }
+//
+//    public Boolean titleIsProvidedButNoTextField_C5() throws InterruptedException {
+//        sendValidTitle();
+//        submit();
+//        pause();
+//        return fail(getErrText());
+//    }
+//
+//    public Boolean noTextisEntered_C6() throws InterruptedException {
+//        sendValidTitle();
+//        sendValidCreatedBy();
+//        submit();
+//        pause();
+//        return fail(getErrText());
+//    }
 ////
+//    public Boolean firstTwoButNotThird_C7() throws InterruptedException {
+//        sendValidTitle();
+//        sendValidText();
+//        submit();
+//        pause();
+//        return  fail(getErrCreatedBy());
+//    }
+////
+//    public Boolean firstIsTwoChars_C9() throws InterruptedException {
+//        sendInvalidTitle();
+//        sendValidText();
+//        sendValidCreatedBy();
+//        submit();
+//        pause();
+//        return fail(getErrTitle());
+//    }
 //
-    public Boolean thirdIsTwoChars_C11() throws InterruptedException {
-        sendValidTitle();
-        sendInvalidText();
-        sendInvalidCreatedBy();
-        submit();
-        pause();
-        return fail(getErrCreatedBy());
-    }
+//    public Boolean secondIsTwoChars_C10() throws InterruptedException {
+//        sendValidTitle();
+//        sendInvalidText();
+//        sendValidCreatedBy();
+//        submit();
+//        pause();
+//        System.out.println(fail(getErrText()));
+//        return fail(getErrText());
+//    }
+//////
+////
+//    public Boolean thirdIsTwoChars_C11() throws InterruptedException {
+//        sendValidTitle();
+//        sendInvalidText();
+//        sendInvalidCreatedBy();
+//        submit();
+//        pause();
+//        return fail(getErrCreatedBy());
+//    }
 
 //    public Boolean FourEntered_C12() throws InterruptedException {
 //        sendValidTitle();

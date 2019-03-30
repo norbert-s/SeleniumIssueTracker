@@ -54,47 +54,20 @@ public class SubmitIssueTest   {
     public void mandatoryFieldsAreEnteredExceptTitle_C4() throws InterruptedException {
         Assert.assertTrue(s.mandatoryFieldsAreEnteredExceptTitle_C4());
     }
-//    @Test
-//    public void titleIsProvidedButNoTextField_C5() throws InterruptedException {
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-//        //System.out.println(jsonText);
-//        boolean errOk=false;
-//        if(jsonText.contains(getErrTextShort())){
-//            errOk=true;
-//        }
-//        Assert.assertTrue(errOk);
-//    }
-//    @Test
-//    public void noTextisEntered_C6() throws InterruptedException {
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-//        //System.out.println(jsonText);
-//        boolean errOk=false;
-//        if(jsonText.contains(getErrTextShort())){
-//            errOk=true;
-//        }
-//        Assert.assertTrue(errOk);
-//    }
-//    @Test
-//    public void firstTwoButNotThird_C7() throws InterruptedException {
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getText().sendKeys(getValidText());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-//        //System.out.println(jsonText);
-//        boolean errOk=false;
-//        if(jsonText.contains(getErrCreatedByShort())){
-//            errOk=true;
-//        }
-//        Assert.assertTrue(errOk);
-//    }
+    @Test
+    public void titleIsProvidedButNoTextField_C5() throws InterruptedException {
+
+        Assert.assertTrue(s.titleIsProvidedButNoTextField_C5());
+    }
+    @Test
+    public void noTextisEntered_C6() throws InterruptedException {
+        Assert.assertTrue(s.noTextisEntered_C6());
+    }
+    @Test
+    public void firstTwoButNotThird_C7() throws InterruptedException {
+
+        Assert.assertTrue(s.firstTwoButNotThird_C7());
+    }
 //    @Test
 //    public void firstIsTwoChars_C9() throws InterruptedException {
 //        s.getTitle().sendKeys(getInvalidShortTitle());

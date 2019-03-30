@@ -64,15 +64,15 @@ public class Data {
         return it("status");
     }
 
-    public String getInvalidShortTitle() {
+    public String getInvalidTitle() {
         return it("invalidShortTitle");
     }
 
-    public String getInvalidShortText() {
+    public String getInvalidText() {
         return it("invalidShortText");
     }
 
-    public String getInvalidShortCreatedBy() {
+    public String getInvalidCreatedBy() {
         return it("invalidShortCreatedBy");
     }
 
@@ -84,11 +84,11 @@ public class Data {
         return it("errTitleShort");
     }
 
-    public String getErrTextShort(){
+    public String getErrText(){
         return it("errTextShort");
     }
 
-    public String getErrCreatedByShort(){
+    public String getErrCreatedBy(){
         return it("errCreatedByShort");
     }
 

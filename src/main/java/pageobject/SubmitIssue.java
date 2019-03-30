@@ -71,80 +71,76 @@ public class SubmitIssue  extends Data {
     public void sendValidTitle(){
         title.sendKeys(getValidTitle());
     }
+    public void sendValidText(){
+        text.sendKeys(getValidText());
+    }
+    public void sendValidCreatedBy(){
+        createdBy.sendKeys(getValidCreatedBy());
+    }
+    public void submit (){
+        submit.click();
+    }
+    public void pause(){
+        getWaits.callWait(jsonResult,d);
+    }
+    public void sendInvalidTitle(){
+        title.sendKeys(getInvalidTitle());
+    }
 
     public Boolean validValuesForTheAPI_C1() throws InterruptedException {
-
-        title.sendKeys(getValidTitle());
-        text.sendKeys(getValidText());
-        createdBy.sendKeys(getValidCreatedBy());
+        sendValidTitle();
+        sendValidText();
+        sendValidCreatedBy();
         submit.click();
-        getWaits.callWait(jsonResult,d);
+        pause();
         return success(getSuccess());
     }
     public Boolean nonValidTitle_C2(){
-        title.sendKeys(getInvalidShortTitle());
-        submit.click();
-        getWaits.callWait(jsonResult,d);
+        sendInvalidTitle();
+        submit();
+        pause();
         return fail(getErrTitle());
     }
 
     public Boolean nothingIsEntered_C3() throws InterruptedException {
-        submit.click();
-        getWaits.callWait(jsonResult,d);
+        submit();
+        pause();
         return fail(getErrTitle());
     }
 
     public Boolean mandatoryFieldsAreEnteredExceptTitle_C4() throws InterruptedException {
-        text.sendKeys(getValidText());
-        createdBy.sendKeys(getValidCreatedBy());
-        submit.click();
-        getWaits.callWait(jsonResult,d);
+        sendValidText();
+        sendValidCreatedBy();
+        submit();
+        pause();
         return fail(getErrTitle());
     }
 
-    public void titleIsProvidedButNoTextField_C5() throws InterruptedException {
-        s.getTitle().sendKeys(getValidTitle());
-        s.getSubmit().click();
-        base.callWait(s.getJson(),d);
-        String jsonText = s.getJson().getText();
-        //System.out.println(jsonText);
-        boolean errOk=false;
-        if(jsonText.contains(getErrTextShort())){
-            errOk=true;
-        }
-        Assert.assertTrue(errOk);
+    public Boolean titleIsProvidedButNoTextField_C5() throws InterruptedException {
+        sendValidText();
+        submit();
+        pause();
+        return fail(getErrText());
+    }
+
+    public Boolean noTextisEntered_C6() throws InterruptedException {
+        sendValidText();
+        sendValidCreatedBy();
+        submit();
+        pause();
+        return fail(getErrText());
+    }
+
+    public Boolean firstTwoButNotThird_C7() throws InterruptedException {
+        sendValidTitle();
+        sendValidText();
+        submit();
+        pause();
+        return  fail(getErrCreatedBy());
     }
 //    @Test
-//    public void noTextisEntered_C6() throws InterruptedException {
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-//        //System.out.println(jsonText);
-//        boolean errOk=false;
-//        if(jsonText.contains(getErrTextShort())){
-//            errOk=true;
-//        }
-//        Assert.assertTrue(errOk);
-//    }
-//    @Test
-//    public void firstTwoButNotThird_C7() throws InterruptedException {
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getText().sendKeys(getValidText());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-//        //System.out.println(jsonText);
-//        boolean errOk=false;
-//        if(jsonText.contains(getErrCreatedByShort())){
-//            errOk=true;
-//        }
-//        Assert.assertTrue(errOk);
-//    }
-//    @Test
 //    public void firstIsTwoChars_C9() throws InterruptedException {
-//        s.getTitle().sendKeys(getInvalidShortTitle());
+//        s.getTitle().sendKeys(getInvalidTitle());
 //        s.getText().sendKeys(getValidText());
 //        s.getCreatedBy().sendKeys(getValidCreatedBy());
 //        s.getSubmit().click();
@@ -152,7 +148,7 @@ public class SubmitIssue  extends Data {
 //        String jsonText = s.getJson().getText();
 //        //System.out.println(jsonText);
 //        boolean errOk=false;
-//        if(jsonText.contains(getErrTitleShort())){
+//        if(jsonText.contains(getErrTitle())){
 //            errOk=true;
 //        }
 //        Assert.assertTrue(errOk);
@@ -160,14 +156,14 @@ public class SubmitIssue  extends Data {
 //    @Test
 //    public void secondIsTwoChars_C10() throws InterruptedException {
 //        s.getTitle().sendKeys(getValidTitle());
-//        s.getText().sendKeys(getInvalidShortText());
+//        s.getText().sendKeys(getInvalidText());
 //        s.getCreatedBy().sendKeys(getValidCreatedBy());
 //        s.getSubmit().click();
 //        base.callWait(s.getJson(),d);
 //        String jsonText = s.getJson().getText();
 //       // //System.out.println(jsonText);
 //        boolean errOk=false;
-//        if(jsonText.contains(getErrTextShort())){
+//        if(jsonText.contains(getErrText())){
 //            errOk=true;
 //        }
 //        Assert.assertTrue(errOk);
@@ -177,13 +173,13 @@ public class SubmitIssue  extends Data {
 //    public void thirdIsTwoChars_C11() throws InterruptedException {
 //        s.getTitle().sendKeys(getValidTitle());
 //        s.getText().sendKeys(getValidText());
-//        s.getCreatedBy().sendKeys(getInvalidShortCreatedBy());
+//        s.getCreatedBy().sendKeys(getInvalidCreatedBy());
 //        s.getSubmit().click();
 //        base.callWait(s.getJson(),d);
 //        String jsonText = s.getJson().getText();
 //        //System.out.println(jsonText);
 //        boolean errOk=false;
-//        if(jsonText.contains(getErrCreatedByShort())){
+//        if(jsonText.contains(getErrCreatedBy())){
 //            errOk=true;
 //        }
 //        Assert.assertTrue(errOk);
@@ -234,7 +230,7 @@ public class SubmitIssue  extends Data {
 //        base.callWait(s.getJson(),d);
 //        String jsonText = s.getJson().getText();
 ////        //System.out.println(jsonText);
-//        if(jsonText.contains(getErrTitleShort())){
+//        if(jsonText.contains(getErrTitle())){
 //            success=true;
 //        }
 //        Assert.assertTrue(success);
@@ -249,7 +245,7 @@ public class SubmitIssue  extends Data {
 //        base.callWait(s.getJson(),d);
 //        String jsonText = s.getJson().getText();
 ////        //System.out.println(jsonText);
-//        if(jsonText.contains(getErrTextShort())){
+//        if(jsonText.contains(getErrText())){
 //            success=true;
 //        }
 //        Assert.assertTrue(success);
@@ -298,7 +294,7 @@ public class SubmitIssue  extends Data {
 ////        wait = callWait(s.getJson());
 //        String jsonText = s.getJson().getText();
 ////        //System.out.println(jsonText);
-//        if(jsonText.contains(getErrCreatedByShort())){
+//        if(jsonText.contains(getErrCreatedBy())){
 //            success=true;
 //        }
 //        Assert.assertTrue(success);

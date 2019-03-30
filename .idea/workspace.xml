@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f06b3cd1-7c3a-4a7e-b273-f189659e7552" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageobject/SubmitIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/SubmitIssue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/testdatamanipulation/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testdatamanipulation/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SubmitIssueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SubmitIssueTest.java" afterDir="false" />
@@ -53,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Proba.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
+            <state relative-caret-position="507">
               <caret line="62" selection-end-line="62" />
               <folding>
                 <element signature="e#0#1400#0" expanded="true" />
@@ -71,13 +70,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/SubmitIssue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="97" column="35" lean-forward="true" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
+            <state relative-caret-position="434">
+              <caret line="154" column="7" lean-forward="true" selection-start-line="140" selection-start-column="6" selection-end-line="154" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1791#1792#0" expanded="true" />
+                <element signature="e#1823#1824#0" expanded="true" />
+                <element signature="e#1868#1869#0" expanded="true" />
+                <element signature="e#1899#1900#0" expanded="true" />
+                <element signature="e#1951#1952#0" expanded="true" />
+                <element signature="e#1975#1976#0" expanded="true" />
+                <element signature="e#2033#2034#0" expanded="true" />
+                <element signature="e#2063#2064#0" expanded="true" />
+                <element signature="e#2088#2089#0" expanded="true" />
+                <element signature="e#2135#2136#0" expanded="true" />
+                <element signature="e#2171#2172#0" expanded="true" />
+                <element signature="e#2220#2221#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/testdatamanipulation/Data.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
+            <state relative-caret-position="307">
+              <caret line="74" column="28" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
               <folding>
                 <element signature="e#1680#1681#0" expanded="true" />
                 <element signature="e#1723#1724#0" expanded="true" />
@@ -132,11 +143,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SubmitIssueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="340">
+              <caret line="68" column="52" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#978#979#0" expanded="true" />
@@ -182,6 +193,7 @@
       <find>file</find>
       <find>a.</find>
       <find>prop.getProperty</find>
+      <find>Short</find>
     </findStrings>
     <replaceStrings>
       <replace>it</replace>
@@ -215,8 +227,8 @@
         <option value="$PROJECT_DIR$/src/main/java/base/Base.java" />
         <option value="$PROJECT_DIR$/src/main/java/utility/GetWaits.java" />
         <option value="$PROJECT_DIR$/src/main/java/testdatamanipulation/Data.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageobject/SubmitIssue.java" />
         <option value="$PROJECT_DIR$/src/test/java/SubmitIssueTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageobject/SubmitIssue.java" />
       </list>
     </option>
   </component>
@@ -332,7 +344,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553951759538" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553953781518" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mastering selenium/two" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -441,9 +453,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SubmitIssueTest - 2019.03.30 at 13h 06m 05s.xml">
-      <configuration name="SubmitIssueTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="SubmitIssueTest - 2019.03.30 at 13h 08m 39s.xml">
       <configuration name="SubmitIssueTest" configurationId="TestNG" />
     </history-entry>
@@ -471,6 +480,9 @@
     <history-entry file="SubmitIssueTest - 2019.03.30 at 13h 57m 46s.xml">
       <configuration name="SubmitIssueTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="SubmitIssueTest - 2019.03.30 at 14h 16m 13s.xml">
+      <configuration name="SubmitIssueTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1448" y="49" width="1456" height="886" extended-state="6" />
@@ -485,12 +497,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31474105" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.8313413" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3980447" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.16061452" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.12749004" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.20111732" />
@@ -578,16 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Proba.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#0#1400#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sourcefiles/data.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -634,8 +636,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/testdatamanipulation/Data.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
+        <state relative-caret-position="307">
+          <caret line="74" column="28" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
           <folding>
             <element signature="e#1680#1681#0" expanded="true" />
             <element signature="e#1723#1724#0" expanded="true" />
@@ -679,24 +681,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/SubmitIssue.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Proba.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="97" column="35" lean-forward="true" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
+        <state relative-caret-position="507">
+          <caret line="62" selection-end-line="62" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#1400#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SubmitIssueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="340">
+          <caret line="68" column="52" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#978#979#0" expanded="true" />
             <element signature="e#1033#1034#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/SubmitIssue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="154" column="7" lean-forward="true" selection-start-line="140" selection-start-column="6" selection-end-line="154" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1791#1792#0" expanded="true" />
+            <element signature="e#1823#1824#0" expanded="true" />
+            <element signature="e#1868#1869#0" expanded="true" />
+            <element signature="e#1899#1900#0" expanded="true" />
+            <element signature="e#1951#1952#0" expanded="true" />
+            <element signature="e#1975#1976#0" expanded="true" />
+            <element signature="e#2033#2034#0" expanded="true" />
+            <element signature="e#2063#2064#0" expanded="true" />
+            <element signature="e#2088#2089#0" expanded="true" />
+            <element signature="e#2135#2136#0" expanded="true" />
+            <element signature="e#2171#2172#0" expanded="true" />
+            <element signature="e#2220#2221#0" expanded="true" />
           </folding>
         </state>
       </provider>

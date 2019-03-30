@@ -1,6 +1,5 @@
 package pageobject;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -49,6 +48,7 @@ public class SubmitIssue  extends Data {
     public WebElement jsonResult;
 
     public Boolean success(String value){
+        pause();
         String jsonText = jsonResult.getText();
         //System.out.println(jsonText);
         boolean containsSuccess=false;
@@ -58,6 +58,7 @@ public class SubmitIssue  extends Data {
         return containsSuccess;
     }
     public Boolean fail(String value){
+        pause();
         String jsonText = jsonResult.getText();
         //System.out.println(jsonText);
         boolean err=false;
@@ -95,7 +96,7 @@ public class SubmitIssue  extends Data {
     public void sendInvalidCreatedBy(){
         createdBy.sendKeys(getInvalidCreatedBy());
     }
-    public void sendStatusTest(){
+    public void sendStatusText(){
         statusText.sendKeys(getStatusText());
     }
 
@@ -173,133 +174,94 @@ public class SubmitIssue  extends Data {
 //
     public Boolean thirdIsTwoChars_C11() throws InterruptedException {
         sendValidTitle();
-        sendInvalidText();
+        sendValidText();
         sendInvalidCreatedBy();
         submit();
-        pause();
+
         return fail(getErrCreatedBy());
     }
 
-//    public Boolean FourEntered_C12() throws InterruptedException {
-//        sendValidTitle();
-//        sendValidText();
-//        sendValidCreatedBy();
-//        sendAssignedTo();
-//        submit();
-//        pause();
-//        return success(getSuccess());
-//    }
+    public Boolean FourEntered_C12() throws InterruptedException {
+        sendValidTitle();
+        sendValidText();
+        sendValidCreatedBy();
+        sendAssignedTo();
+        submit();
+
+        return success(getSuccess());
+    }
 //
-//    public Boolean allFiveEntered_C14() throws InterruptedException, IOException {
-//        sendValidTitle();
-//        sendValidText();
-//        sendValidCreatedBy();
-//        sendAssignedTo();
-//        sendStatusTest();
-//        submit();
-//        pause();
-//        return success(getSuccess());
-//    }
-//    @Test
-//    public Boolean title256Chars_C15() throws InterruptedException, IOException {
-//        String chars256 = file.createData(256,prop);
-//        s.getTitle().sendKeys(chars256);
-//        s.getText().sendKeys(getValidText());
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getAssignedTo().sendKeys(getAssignedTo());
-//        s.getStatus().sendKeys(getStatus());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-////        //System.out.println(jsonText);
-//        if(jsonText.contains(getErrTitle())){
-//            success=true;
-//        }
-//        Assert.assertTrue(success);
-//    }
-//    @Test
-//    public Boolean text3001Chars_C16() throws InterruptedException, IOException {
-//        String data = file.createData(3001,prop);
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getText().sendKeys(data);
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-////        //System.out.println(jsonText);
-//        if(jsonText.contains(getErrText())){
-//            success=true;
-//        }
-//        Assert.assertTrue(success);
-//    }
-//    @Test
-//    public Boolean text3000Chars_C17() throws InterruptedException, IOException {
-//        String data = file.createData(3000,prop);
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getText().sendKeys(data);
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-////        //System.out.println(jsonText);
-//        if(jsonText.contains(getSuccess())){
-//            success=true;
-//        }
-//        Assert.assertTrue(success);
-//    }
-//    @Test
-//    public Boolean title255Chars_C18() throws InterruptedException, IOException {
-//        String chars256 = file.createData(255,prop);
-//        s.getTitle().sendKeys(chars256);
-//        s.getText().sendKeys(getValidText());
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getAssignedTo().sendKeys(getAssignedTo());
-//        s.getStatus().sendKeys(getStatus());
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-////        wait = callWait(s.getJson());
-//        String jsonText = s.getJson().getText();
-////        //System.out.println(jsonText);
-//        if(jsonText.contains(getSuccess())){
-//            success=true;
-//        }
-//        Assert.assertTrue(success);
-//    }
-//    @Test
-//    public Boolean createdBy256Chars_C20() throws InterruptedException, IOException {
-//        String data = file.createData(256,prop);
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getText().sendKeys(getValidText());
-//        s.getCreatedBy().sendKeys(data);
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-////        wait = callWait(s.getJson());
-//        String jsonText = s.getJson().getText();
-////        //System.out.println(jsonText);
-//        if(jsonText.contains(getErrCreatedBy())){
-//            success=true;
-//        }
-//        Assert.assertTrue(success);
-//    }
-//    @Test
-//    public Boolean createdBy255Chars_C21() throws InterruptedException, IOException {
-//
-//        file = new getData();
-//        String data = file.createData(255,prop);
-//        s.getTitle().sendKeys(getValidTitle());
-//        s.getText().sendKeys(getValidText());
-//        s.getCreatedBy().sendKeys(data);
-//        s.getSubmit().click();
-//        base.callWait(s.getJson(),d);
-//
-////        wait = callWait(s.getJson());
-//        String jsonText = s.getJson().getText();
-////        //System.out.println(jsonText);
-//        if(jsonText.contains(getSuccess())){
-//            success=true;
-//        }
-//        Assert.assertTrue(success);
-//    }
+    public Boolean allFiveEntered_C14() throws InterruptedException, IOException {
+        sendValidTitle();
+        sendValidText();
+        sendValidCreatedBy();
+        sendAssignedTo();
+        sendStatusText();
+        submit();
+
+        return success(getSuccess());
+    }
+
+    public Boolean title256Chars_C15() throws InterruptedException, IOException {
+        String chars256 = createData(256);
+        title.sendKeys(chars256);
+        sendValidText();
+        sendValidCreatedBy();
+        sendAssignedTo();
+        sendStatusText();
+        submit();
+
+        return fail(getErrTitle());
+    }
+
+    public Boolean text3001Chars_C16() throws InterruptedException, IOException {
+        String data = createData(3001);
+        sendValidTitle();
+        text.sendKeys(data);
+        sendValidCreatedBy();
+        submit();
+
+        return fail(getErrText());
+    }
+
+    public Boolean text3000Chars_C17() throws InterruptedException, IOException {
+        String data = createData(3000);
+        sendValidTitle();
+        text.sendKeys(data);
+        sendValidCreatedBy();
+        submit();
+       return success(getSuccess());
+    }
+
+    public Boolean title255Chars_C18() throws InterruptedException, IOException {
+        String chars256 = createData(255);
+        title.sendKeys(chars256);
+        sendValidText();
+        sendValidCreatedBy();
+        sendAssignedTo();
+        sendStatusText();
+        submit();
+        return success(getSuccess());
+    }
+
+    public Boolean createdBy256Chars_C20() throws InterruptedException, IOException {
+        String data = createData(256);
+        sendValidTitle();
+        sendValidText();
+        createdBy.sendKeys(data);
+        submit();
+        return fail(getErrCreatedBy());
+    }
+
+    public Boolean createdBy255Chars_C21() throws InterruptedException, IOException {
+        String data = createData(255);
+        System.out.println(data);
+        sendValidTitle();
+        sendValidText();
+        createdBy.sendKeys(data);
+        submit();
+        return success(getSuccess());
+    }
 
 
 }

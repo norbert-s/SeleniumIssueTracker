@@ -4,14 +4,9 @@
     <list default="true" id="f06b3cd1-7c3a-4a7e-b273-f189659e7552" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageobject/SubmitIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobject/SubmitIssue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sourcefiles/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sourcefiles/data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/testdatamanipulation/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testdatamanipulation/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SubmitIssueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SubmitIssueTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/IssueTracker.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pageobject/SubmitIssue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageobject/SubmitIssue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testdatamanipulation/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testdatamanipulation/Data.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/IssueTracker.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SubmitIssueTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,13 +16,35 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/test/java/SubmitIssueTest.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="404">
+                    <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/SubmitIssue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-340">
-              <caret line="101" selection-start-line="101" selection-end-line="170" selection-end-column="5" />
+            <state relative-caret-position="357">
+              <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1868#1869#0" expanded="true" />
@@ -35,20 +52,26 @@
                 <element signature="e#1951#1952#0" expanded="true" />
                 <element signature="e#2006#2007#0" expanded="true" />
                 <element signature="e#2040#2041#0" expanded="true" />
-                <element signature="e#2065#2066#0" expanded="true" />
-                <element signature="e#2033#2034#0" expanded="true" />
-                <element signature="e#2063#2064#0" expanded="true" />
-                <element signature="e#2088#2089#0" expanded="true" />
-                <element signature="e#2135#2136#0" expanded="true" />
-                <element signature="e#2171#2172#0" expanded="true" />
-                <element signature="e#2220#2221#0" expanded="true" />
-                <element signature="e#2255#2256#0" expanded="true" />
-                <element signature="e#2286#2287#0" expanded="true" />
-                <element signature="e#2342#2343#0" expanded="true" />
-                <element signature="e#2366#2367#0" expanded="true" />
-                <element signature="e#2515#2516#0" expanded="true" />
-                <element signature="e#2540#2541#0" expanded="true" />
+                <element signature="e#2092#2093#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/testdatamanipulation/getData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="99" column="5" lean-forward="true" selection-start-line="87" selection-start-column="4" selection-end-line="99" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -65,20 +88,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/testdatamanipulation/Data.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-23">
-              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            <state relative-caret-position="221">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SubmitIssueTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utility/Prop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="19" column="130" selection-start-line="19" selection-start-column="130" selection-end-line="19" selection-end-column="130" />
             </state>
           </provider>
         </entry>
@@ -86,7 +106,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/base/Base.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="187">
               <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -172,8 +192,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,7 +284,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553967047483" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553976767856" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mastering selenium/two" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -303,6 +323,7 @@
       <module name="IssueTrackerSecondVersion" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DeleteIssueTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -313,6 +334,7 @@
       <module name="IssueTrackerSecondVersion" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GetIssueTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -323,6 +345,7 @@
       <module name="IssueTrackerSecondVersion" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Proba" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -333,6 +356,7 @@
       <module name="IssueTrackerSecondVersion" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SubmitIssueTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -343,6 +367,7 @@
       <module name="IssueTrackerSecondVersion" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UpdateIssueTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -373,41 +398,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SubmitIssueTest - 2019.03.30 at 14h 16m 13s.xml">
+    <history-entry file="SubmitIssueTest - 2019.03.30 at 20h 31m 28s.xml">
       <configuration name="SubmitIssueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SubmitIssueTest - 2019.03.30 at 15h 24m 59s.xml">
+    <history-entry file="SubmitIssueTest - 2019.03.30 at 20h 55m 58s.xml">
       <configuration name="SubmitIssueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SubmitIssueTest - 2019.03.30 at 15h 30m 04s.xml">
+    <history-entry file="SubmitIssueTest - 2019.03.30 at 20h 57m 12s.xml">
       <configuration name="SubmitIssueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SubmitIssueTest - 2019.03.30 at 15h 31m 16s.xml">
+    <history-entry file="SubmitIssueTest - 2019.03.30 at 20h 58m 53s.xml">
       <configuration name="SubmitIssueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SubmitIssueTest - 2019.03.30 at 15h 31m 58s.xml">
+    <history-entry file="SubmitIssueTest - 2019.03.30 at 21h 00m 33s.xml">
       <configuration name="SubmitIssueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SubmitIssueTest - 2019.03.30 at 15h 34m 01s.xml">
+    <history-entry file="SubmitIssueTest - 2019.03.30 at 21h 03m 54s.xml">
       <configuration name="SubmitIssueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SubmitIssueTest - 2019.03.30 at 15h 36m 01s.xml">
+    <history-entry file="SubmitIssueTest - 2019.03.30 at 21h 06m 29s.xml">
       <configuration name="SubmitIssueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SubmitIssueTest - 2019.03.30 at 15h 37m 13s.xml">
+    <history-entry file="SubmitIssueTest - 2019.03.30 at 21h 07m 13s.xml">
       <configuration name="SubmitIssueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SubmitIssueTest - 2019.03.30 at 15h 37m 41s.xml">
+    <history-entry file="SubmitIssueTest - 2019.03.30 at 21h 07m 35s.xml">
       <configuration name="SubmitIssueTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SubmitIssueTest - 2019.03.30 at 15h 39m 34s.xml">
+    <history-entry file="SubmitIssueTest - 2019.03.30 at 21h 08m 11s.xml">
       <configuration name="SubmitIssueTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1448" y="49" width="1456" height="886" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.258596" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21848138" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -416,12 +442,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.03984064" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3306773" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3980447" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.1992032" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.25763613" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.21646747" />
@@ -474,13 +500,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/sourcefiles/chars255x.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/java/testdatamanipulation/CreateFile.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/sourcefiles/data.txt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/testdatamanipulation/getData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/UpdateIssueTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1836">
@@ -496,13 +515,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sourcefiles/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/utility/Prop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="19" column="130" selection-start-line="19" selection-start-column="130" selection-end-line="19" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/DeleteIssueTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1921">
@@ -551,17 +563,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/testdatamanipulation/getData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="99" column="5" lean-forward="true" selection-start-line="87" selection-start-column="4" selection-end-line="99" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/Prop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="130" selection-start-line="19" selection-start-column="130" selection-end-line="19" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/testdatamanipulation/Data.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        <state relative-caret-position="221">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/base/Base.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="187">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SubmitIssueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -570,8 +606,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageobject/SubmitIssue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="101" selection-start-line="101" selection-end-line="170" selection-end-column="5" />
+        <state relative-caret-position="357">
+          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1868#1869#0" expanded="true" />
@@ -579,29 +615,7 @@
             <element signature="e#1951#1952#0" expanded="true" />
             <element signature="e#2006#2007#0" expanded="true" />
             <element signature="e#2040#2041#0" expanded="true" />
-            <element signature="e#2065#2066#0" expanded="true" />
-            <element signature="e#2033#2034#0" expanded="true" />
-            <element signature="e#2063#2064#0" expanded="true" />
-            <element signature="e#2088#2089#0" expanded="true" />
-            <element signature="e#2135#2136#0" expanded="true" />
-            <element signature="e#2171#2172#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
-            <element signature="e#2255#2256#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-            <element signature="e#2342#2343#0" expanded="true" />
-            <element signature="e#2366#2367#0" expanded="true" />
-            <element signature="e#2515#2516#0" expanded="true" />
-            <element signature="e#2540#2541#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SubmitIssueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2092#2093#0" expanded="true" />
           </folding>
         </state>
       </provider>

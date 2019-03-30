@@ -40,6 +40,21 @@ public class Data {
 
     }
 
+    public String createData(int num) throws IOException {
+
+        String library = Prop.prop.getProperty("sourcefiles");
+        FileReader file = new FileReader(library+num+".txt");
+        BufferedReader reader = new BufferedReader(file);
+        StringBuilder string = new StringBuilder();
+        String line = "";
+        String lineConcat="";
+        while((line = reader.readLine())!=null){
+            lineConcat += line;
+        }
+
+        return lineConcat;
+    }
+
     //this will return the string of the looked for string
     public  String it(String v){
         return  map.get(v);

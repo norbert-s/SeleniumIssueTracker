@@ -81,55 +81,51 @@ public class SubmitIssueTest   {
 //
     @Test
     public void thirdIsTwoChars_C11() throws InterruptedException {
-
         Assert.assertTrue(s.thirdIsTwoChars_C11());
-//    }
-//    @Test
-//    public void FourEntered_C12() throws InterruptedException {
-//
-//        Assert.assertTrue(s.FourEntered_C12());
-//    }
-//    @Test
-//    public void allFiveEntered_C14() throws InterruptedException, IOException {
-//
-//        Assert.assertTrue(s.allFiveEntered_C14());
-//
-//    }
-//    @Test
-//    public void title256Chars_C15() throws InterruptedException, IOException {
-//
-//        Assert.assertTrue(success);
-//    }
-//    @Test
-//    public void text3001Chars_C16() throws InterruptedException, IOException {
+    }
+    @Test
+    public void FourEntered_C12() throws InterruptedException {
 
-//        Assert.assertTrue(success);
-//    }
-//    @Test
-//    public void text3000Chars_C17() throws InterruptedException, IOException {
+        Assert.assertTrue(s.FourEntered_C12());
+    }
+    @Test
+    public void allFiveEntered_C14() throws InterruptedException, IOException {
+        Assert.assertTrue(s.allFiveEntered_C14());
 
-//        Assert.assertTrue(success);
-//    }
-//    @Test
-//    public void title255Chars_C18() throws InterruptedException, IOException {
+    }
+    @Test
+    public void title256Chars_C15() throws InterruptedException, IOException {
+        Assert.assertTrue(s.title256Chars_C15());
+    }
+    @Test
+    public void text3001Chars_C16() throws InterruptedException, IOException {
 
-//        Assert.assertTrue(success);
-//    }
-//    @Test
-//    public void createdBy256Chars_C20() throws InterruptedException, IOException {
+        Assert.assertTrue(s.text3001Chars_C16());
+    }
+    @Test
+    public void text3000Chars_C17() throws InterruptedException, IOException {
 
-//        Assert.assertTrue(success);
-//    }
-//    @Test
-//    public void createdBy255Chars_C21() throws InterruptedException, IOException {
+        Assert.assertTrue(s.text3000Chars_C17());
+    }
+    @Test
+    public void title255Chars_C18() throws InterruptedException, IOException {
 
-//        Assert.assertTrue(success);
-//    }
+        Assert.assertTrue(s.title255Chars_C18());
+    }
+    @Test
+    public void createdBy256Chars_C20() throws InterruptedException, IOException {
+
+        Assert.assertTrue(s.createdBy256Chars_C20());
+    }
+    @Test
+    public void createdBy255Chars_C21() throws InterruptedException, IOException {
+
+        Assert.assertTrue(s.createdBy255Chars_C21());
+    }
 //
     @AfterMethod
-
     public void tearDown(){
-        base.d.quit();
+//        base.d.quit();
 
     }
     @AfterTest

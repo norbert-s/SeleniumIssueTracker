@@ -125,7 +125,7 @@ public class SubmitIssueTest   {
 //
     @AfterMethod
     public void tearDown(){
-//        base.d.quit();
+        base.d.quit();
 
     }
     @AfterTest

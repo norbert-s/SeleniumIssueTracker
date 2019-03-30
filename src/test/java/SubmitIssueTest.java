@@ -39,7 +39,7 @@ public class SubmitIssueTest   {
         base = new Base();
         base.ChromeInit();
         this.d = base.d;
-        s = new SubmitIssue();
+        s = new SubmitIssue(d);
         file = new getData();
     }
     @BeforeMethod
@@ -55,8 +55,8 @@ public class SubmitIssueTest   {
 //
 //    }
     @Test
-    public void proba(){
-        s.sendTitle();
+    public void proba() throws InterruptedException {
+        s.validValuesForTheAPI_C1();
     }
 
 //    @Test

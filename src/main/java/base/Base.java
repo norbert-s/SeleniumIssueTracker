@@ -42,11 +42,7 @@ public class Base {
 
     }
 
-    public WebDriverWait callWait(WebElement getJsonLocation, WebDriver d){
-        wait= new WebDriverWait(d,30);
-        wait.until(ExpectedConditions.visibilityOf(getJsonLocation));
-        return wait;
-    }
+
 
 //    public void callWait(WebElement x,WebDriver d){
 //

@@ -4,7 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import org.openqa.selenium.support.PageFactory;
 import testdatamanipulation.Data;
+import utility.GetWaits;
 import utility.Prop;
 
 import java.io.IOException;
@@ -12,16 +15,17 @@ import java.io.IOException;
 
 
 public class SubmitIssue  extends Data {
-//    public WebDriver d;
+    private WebDriver d;
     Prop p;
+    GetWaits getWaits;
 
-    public SubmitIssue() throws IOException {
+
+
+    public SubmitIssue(WebDriver d) throws IOException {
+        this.d = d;
+        PageFactory.initElements(d,this);
+        getWaits = new GetWaits();
     }
-
-
-//    public SubmitIssue(WebDriver d) throws IOException {
-//        this.d = d;
-//    }
 
     @FindBy(css = "form[method='post'] input[name='issue_title']")
     WebElement title;
@@ -44,31 +48,21 @@ public class SubmitIssue  extends Data {
     @FindBy(id = "jsonResult")
     WebElement json;
 
+    public void validValuesForTheAPI_C1() throws InterruptedException {
+        title.sendKeys(getValidTitle());
+        text.sendKeys(getValidText());
+        createdBy.sendKeys(getValidCreatedBy());
+        submit.click();
+        getWaits.callWait(json,d);
+        String jsonText = json.getText();
+        //System.out.println(jsonText);
+        boolean containsSuccess=false;
+        if(jsonText.contains(getSuccess())){
+            containsSuccess=true;
+        }
 
-
-    public void sendTitle(WebDriver d){
-        System.out.println("valid title submit issuebol"+validTitle());
-        getTitle().sendKeys(validTitle());
-
+        Assert.assertTrue(containsSuccess);
     }
-
-//    public void validValuesForTheAPI_C1() throws InterruptedException {
-//
-//        title.sendKeys();
-//        s.getText().sendKeys(getValidText());
-//        s.getCreatedBy().sendKeys(getValidCreatedBy());
-//        s.getSubmit().click();
-//
-//        base.callWait(s.getJson(),d);
-//        String jsonText = s.getJson().getText();
-//        //System.out.println(jsonText);
-//        boolean containsSuccess=false;
-//        if(jsonText.contains(getSuccess())){
-//            containsSuccess=true;
-//        }
-//
-//        Assert.assertTrue(containsSuccess);
-//    }
 //
     public WebElement getTitle(){
         return title;
@@ -102,4 +96,6 @@ public class SubmitIssue  extends Data {
 //       return json;
 //
 //    }
+
+
 }
